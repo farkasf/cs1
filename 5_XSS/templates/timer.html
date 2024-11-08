@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../static/styles.css" />
+    <script>
+        function startTimer(seconds) {
+          seconds = parseInt(seconds) || 3;
+          setTimeout(function() { 
+            window.confirm("Knock knock knock!");
+            window.history.back();
+          }, seconds * 1000);
+        }
+      </script>
+  </head>
+ 
+  <body id="page1">
+    <h1>Ugly Timer Inc.</h1>
+    <img src="../static/clock.gif" />
+    <br>
+    <div id="message">i will wait for {{ timer }} seconds</div>
+    <br>
+    <img id="animation" src="../static/timer.gif" onload="startTimer('{{ timer }}');" />
+  </body>
+</html>

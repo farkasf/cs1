@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="loginForm" onsubmit="return validateLogin()">
+        <div class="container">
+            <h1 style="text-align: center;">secure login 🔐</h1>
+            <label for="uname"><b>username</b></label>
+            <input type="text" id="username" required>
+
+            <label for="psw"><b>password</b></label>
+            <input type="password" id="password" required>
+
+            <!-- TODO: remove test credentials root:root, no need for them anymore -->
+            <button type="submit">login</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
